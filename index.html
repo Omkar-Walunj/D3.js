@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nintendo Stock Price</title>
+    <style>
+        rect {
+            pointer-events: all;
+            fill-opacity: 0;
+            stroke-opacity: 0;
+            z-index: 1;
+        }
+
+        .tooltip {
+            position: absolute;
+            padding: 5px;
+            background-color: rgb(3, 12, 19);
+            color: rgb(224, 224, 224);
+            border: 0px solid white;
+            border-radius: 0px;
+            display: none;
+            opacity: .75;
+            font-size: 14px;
+        }
+
+        .tooltip-line {
+            stroke-opacity: 0.5;
+        }
+
+        #header h1 {
+            text-align: center;
+            color: rgb(255, 255, 255);
+
+        }
+
+        #header h2 {
+            margin-left: 50px;
+            color: rgb(249, 248, 248);
+        }
+
+        #header {
+            margin-bottom: 50px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 5px;
+        }
+
+        #write {
+            background-color:  rgb(0, 0, 0);;
+            margin-top: 50px;
+            
+            border-radius: 10px;
+        }
+        #write h3{
+            color: white;
+            margin-left: 10px;
+        }
+        #write h1{
+            color: white;
+            margin-left: 10px;
+            
+        } 
+
+        /* #main{
+    background-color: rgb(0, 0, 1);
+}  */
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <p>
+            <h1>How the stock prices changed from 1997 to 2023 for Nintendo stocks?</h1>
+            </p>
+            <p>
+            <h2>By</h2>
+            <h2> Omkar Walunj </h2>
+            <h2>Rohan Nikkam</h2>
+            <h2> Ajit Koti</h2>
+
+            </p>
+
+        </div>
+
+        <div id="chart-container"></div>
+        <div id="slider-range"></div>
+        <div id="write">
+            <h1>Write Up</h1>
+            <p>
+
+            <h3>In designing our webpage for visualizing Nintendo's stock data, we carefully considered various design
+                decisions. We chose an area graph representation to effectively convey the historical stock price
+                changes over time, as it allows users to discern trends and patterns easily. We opted for D3.js for its
+                flexibility and interactivity, enabling users to hover over data points for detailed information. We
+                also incorporated smooth transitions to enhance the user experience.</h3>
+                <h3>
+                Our development process was a collaborative effort among team members. We spent approximately 80-100
+                people-hours on this project. The most time-consuming aspects were data preprocessing and integration
+                with D3.js, followed by refining the user interface for a seamless and intuitive experience. We
+                continuously iterated to ensure the graph's clarity and readability, making sure it effectively serves
+                its purpose as a financial data visualization tool.</h3>
+            </p>
+            <p>
+                <h3>Our web page wont look that attractive with animation and creative as we were stuck with integrating out dataset with D3.js  </h3>
+                <h3>We learned alot of things as how d3.js works with as a javascript library for data visualization and have so many creative functionalities</h3>
+            </p>
+        </div>
+
+    </div>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
